@@ -1,0 +1,41 @@
+﻿@page
+@model BirdClinicSystems.Pages.UserManagement.IndexModel
+@{
+}
+<div class="site-section bg-light">
+    <p>
+        <a asp-page="Create">Create Booking</a>
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2 class="mt-3 mb-5">List Bird</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach (var item in Model.UserList)
+            {
+
+                <div class="col-md-6 col-lg-4   mb-5">
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" style="height:200px; width:300px" alt="Card image cap" src="data:image/png;base64,@item.Avatar">
+                        <div class="card-body">
+                            <h2 class=" mt-1 mb-1 text-center card-title">  @item.ID</h2>
+
+                            <p class="card-text">Email: @item.Email</p>
+                            <p class="card-text">Password: @item.Status</p>
+                            <p class="card-text">Name: @item.Name</p>
+                            <p class="card-text">Birthday: @item.Birthday</p>
+                            <p class="card-text">Address: @item.Address</p>
+                            <p class="card-text">Phone Number: @item.PhoneNumber</p>
+                            @*<img class="card-img" @item.Avatar />*@
+                            <p class="card-text">Create Date: @item.CreateDate</p>
+                            <p class="card-text">Update Date: @item.UpdateDate</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -25,7 +25,7 @@ namespace BirdClinicSystems
         {
             services.AddHttpClient("YourApiClientName", client =>
             {
-                client.BaseAddress = new Uri("http://ticketswap.somee.com/"); // Replace with your API base URL
+                client.BaseAddress = new Uri("http://ticketswap.somee.com/");// Replace with your API base URL
                                                                           // Additional configuration for the HTTP client, if needed
             });
             services.AddRazorPages();
