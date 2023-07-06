@@ -94,3 +94,10 @@ C:\Users\lekha\Desktop\bird-clinic-client-2\BirdClinic\BirdClinicSystems\obj\Deb
 C:\Users\lekha\Desktop\bird-clinic-client-2\BirdClinic\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\DoctorManagement\Index.cshtml.g.cs
 C:\Users\lekha\Desktop\bird-clinic-client-2\BirdClinic\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\BookingDetailsManagement\Index.cshtml.g.cs
 C:\Users\lekha\Desktop\bird-clinic-client-2\BirdClinic\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\UserManagement\Index.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\BirdManagement\Create.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\BirdManagement\Index.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\BookingDetailsManagement\Index.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\BookingManagement\Index.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\DoctorManagement\Index.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\UserManagement\Index.cshtml.g.cs
+C:\Code\BirdClinicSystems\BirdClinicSystems\obj\Debug\net5.0\Razor\Pages\DoctorBooking\Booking.cshtml.g.cs
