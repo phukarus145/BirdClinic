@@ -2,6 +2,7 @@ using BirdClinicSystems.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -29,19 +30,20 @@ namespace BirdClinicSystems.Pages.BirdManagement
                 foreach (var item in dataArray)
 
                 {
+                    DateTime birthdayValue = item.birthday;
+                    int statusValue = item.status;
+                    int userIDValue = item.userID;
                     var bird = new BirdDTO
                     {
                         ID = item.id,
                         Name = item.name,
-                        Birthday = item.birthday,
+                        Birthday = birthdayValue,
                         Description = item.description,
                         Image = item.image,
-                        Height= item.height,
-                        Weight= item.weight,
-                        CreateDate = item.createdate,
-                        UpdateDate = item.updatedate,
-                        UserID = item.userId,
-                        Status = item.status
+                        Height = item.height,
+                        Weight = item.weight,
+                        UserID = userIDValue,
+                        Status = statusValue
                     };
                     BirdList.Add(bird);
                 }

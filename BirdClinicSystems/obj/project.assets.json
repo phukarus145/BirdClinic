@@ -387,11 +387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lekha\\Desktop\\bird-clinic-client-2\\BirdClinic\\BirdClinicSystems\\BirdClinicSystems.csproj",
+      "projectUniqueName": "C:\\Users\\lekha\\Desktop\\bird-clinic-client-3\\BirdClinic\\BirdClinicSystems\\BirdClinicSystems.csproj",
       "projectName": "BirdClinicSystems",
-      "projectPath": "C:\\Users\\lekha\\Desktop\\bird-clinic-client-2\\BirdClinic\\BirdClinicSystems\\BirdClinicSystems.csproj",
+      "projectPath": "C:\\Users\\lekha\\Desktop\\bird-clinic-client-3\\BirdClinic\\BirdClinicSystems\\BirdClinicSystems.csproj",
       "packagesPath": "C:\\Users\\lekha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lekha\\Desktop\\bird-clinic-client-2\\BirdClinic\\BirdClinicSystems\\obj\\",
+      "outputPath": "C:\\Users\\lekha\\Desktop\\bird-clinic-client-3\\BirdClinic\\BirdClinicSystems\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

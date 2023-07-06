@@ -2,6 +2,7 @@ using BirdClinicSystems.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace BirdClinicSystems.Pages.UserManagement
         public async Task<IActionResult> OnGet()
         {
             var client = _clientFactory.CreateClient("YourApiClientName");
-            var response = await client.GetAsync("api/Doctors/getAllDoctor");
+            var response = await client.GetAsync("api/Users/getAllUser");
 
             if (response.IsSuccessStatusCode)
             {
@@ -33,18 +34,23 @@ namespace BirdClinicSystems.Pages.UserManagement
                 foreach (var item in dataArray)
 
                 {
+                    DateTime birthdayValue = item.birthday;
+                    string emailValue = item.email;
+                    int statusValue = item.status;
+                    string nameValue = item.name;
+                    string addressValue = item.address;
+                    byte[] avatarValue = item.avatar;
+                    string phoneValue = item.phoneNumber;
                     var user = new UserDTO
                     {
-                        /*ID = item.id,*/
-                        Email = item.Email,
-                        /*Status= item.status,*/
-                        Name = item.Name,
-                        Address = item.Address,
-                        /*Birthday = item.Birthday,*/
-                        Avatar = item.Avatar,
-                        PhoneNumber = item.PhoneNumber,
-                        /*CreateDate = item.CreateDate,*/
-                        /*UpdateDate = item.UpdateDate,*/
+                        ID = item.id,
+                        Email = emailValue,
+                        Status = statusValue,
+                        Name = nameValue,
+                        Address = addressValue,
+                        Birthday = birthdayValue,
+                        Avatar = avatarValue,
+                        PhoneNumber = phoneValue,
                     };
                     UserList.Add(user);
                 }

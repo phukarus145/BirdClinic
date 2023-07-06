@@ -21,23 +21,18 @@
                     <div class="card" style="width:300px">
                         <img class="card-img-top" style="height:200px; width:300px" alt="Card image cap" src="data:image/png;base64,@item.Image">
                         <div class="card-body">
-                            <h2 class=" mt-1 mb-1 text-center card-title">  @item.Name</h2>
+                            <h2 class=" mt-1 mb-1 text-center card-title">  @item.ID</h2>
 
+                            <p class="card-text">Name: @item.Name</p>
                             <p class="card-text">Birthday: @item.Birthday</p>
                             <p class="card-text">Description: @item.Description</p>
-                            @*<img src="data:image/png;base64,@item.Image" />*@
+                            <p class="card-text">User ID: @item.UserID</p>
                             <p class="card-text">Height: @item.Height</p>
                             <p class="card-text">Weight: @item.Weight</p>
-                            <p class="card-text">CreateDate: @item.CreateDate</p>
-                            <p class="card-text">UpdateDate: @item.UpdateDate</p>
-                            
-
                         </div>
                     </div>
                 </div>
-
             }
-
         </div>
     </div>
 </div>

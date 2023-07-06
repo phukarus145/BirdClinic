@@ -1,0 +1,68 @@
+﻿@page
+@model BirdClinicSystems.Pages.RegisterModel
+@{
+}
+<div class="container">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger text-center" role="alert">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+                <div class="card-body p-4 p-sm-5">
+                    <h5 class="card-title text-center mb-5 fw-light fs-5">Login Form</h5>
+                    <form method="post" asp-page-handler="Create" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="account.Email" class="control-label">Email</label>
+                            <input asp-for="account.Email" class="form-control" />
+                            <span asp-validation-for="account.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="account.Name" class="control-label"></label>
+                            <input asp-for="account.Name" class="form-control" />
+                            <span asp-validation-for="account.Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label for="floatingPassword">Password</label>
+                            <input type="password" class="form-control" id="floatingPassword" asp-for="account.Password">
+                            <span asp-validation-for="account.Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label for="floatingPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="floatingPassword" asp-for="account.ConfirmPassword">
+                            <span asp-validation-for="account.ConfirmPassword" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label asp-for="account.Image" class="control-label"></label>
+                            <input type="file" asp-for="account.Image" class="form-control"/>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label asp-for="account.Birthday" class="control-label"></label>
+                            <input asp-for="account.Birthday" class="form-control" />
+                            <span asp-validation-for="account.Birthday" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label asp-for="account.Address" class="control-label"></label>
+                            <input asp-for="account.Address"  name="imageFile" class="form-control" />
+                            <span asp-validation-for="account.Address" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <label asp-for="account.PhoneNumber" class="control-label"></label>
+                            <input asp-for="account.PhoneNumber" class="form-control" />
+                            <span asp-validation-for="account.PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

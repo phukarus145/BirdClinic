@@ -1,0 +1,38 @@
+﻿@page
+@model BirdClinicSystems.Pages.RoomDoctorManagement.IndexModel
+@{
+}
+<div class="site-section bg-light">
+    <p>
+        <a asp-page="Create">Create Room Doctor</a>
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+                <h2 class="mt-3 mb-5">List Room Doctor</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach (var item in Model.list)
+            {
+
+                <div class="col-md-6 col-lg-4   mb-5">
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" style="height:200px; width:300px" alt="Card image cap" src="data:image/png;base64,">
+                        <div class="card-body">
+                            <h2 class=" mt-1 mb-1 text-center card-title">  @item.ID</h2>
+
+                            <p class="card-text">Doctor ID: @item.DoctorID</p>
+                            <p class="card-text">Room ID: @item.RoomID</p>
+                            <p class="card-text">Time Start: @item.TimeStart</p>
+                            <p class="card-text">Time End: @item.TimeEnd</p>
+                            <p class="card-text">Status: @item.Status</p>
+                            @*<img class="card-img"@item.Avatar/>*@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

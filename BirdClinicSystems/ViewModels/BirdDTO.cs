@@ -4,7 +4,7 @@ namespace BirdClinicSystems.ViewModels
 {
     public class BirdDTO
     {
-        public int? ID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public DateTime? Birthday { get; set; }
         public string Description { get; set; }
@@ -13,7 +13,7 @@ namespace BirdClinicSystems.ViewModels
         public Double Weight { get; set; }
         public DateTime? CreateDate { get; set; }
         public DateTime? UpdateDate { get; set; }
-        public int? UserID { get; set; }
-        public int? Status { get; set; }
+        public int UserID { get; set; }
+        public int Status { get; set; }
     }
 }

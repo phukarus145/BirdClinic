@@ -19,7 +19,7 @@ namespace BirdClinicSystems.Pages.BookingDetailManagement
         public async Task<IActionResult> OnGet()
         {
             var client = _clientFactory.CreateClient("YourApiClientName");
-            var response = await client.GetAsync("api/Birds/getAllBird");
+            var response = await client.GetAsync("api/BookingDetails/getAllBookingDetail");
 
             if (response.IsSuccessStatusCode)
             {
@@ -29,14 +29,19 @@ namespace BirdClinicSystems.Pages.BookingDetailManagement
                 foreach (var item in dataArray)
 
                 {
+                    int idValue = item.id;
+                    int birdIdValue = item.birdId;
+                    int bookingIdValue = item.bookingId;
+                    int roomDoctorIdValue = item.roomDoctorId;
+                    int statusValue = item.status;
                     var bookingDetail = new BookingDetailDTO
                     {
-                        ID= item.id,
-                        BirdID= item.id,
-                        BookingID= item.id,
+                        ID= idValue,
+                        BirdID= birdIdValue,
+                        BookingID= bookingIdValue,
                         Description= item.description,
-                        Room_DoctorID= item.room_doctorID,
-                        Status= item.status,
+                        Room_DoctorID= roomDoctorIdValue,
+                        Status= statusValue,
                     };
                     BookingDetailsList.Add(bookingDetail);
                 }
