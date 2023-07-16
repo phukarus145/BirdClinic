@@ -138,7 +138,7 @@ namespace BirdClinicSystems.Pages.DoctorBooking
 
             return Page();
         }
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPostSubmit()
         {
             try
             {
